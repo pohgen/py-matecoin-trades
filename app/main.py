@@ -35,7 +35,7 @@ def calculate_profit(name: str) -> None:
     content.append(result)
 
     with open(
-            os.path.join("py-matecoin-trades", "app", "profit.json"),
+            "profit.json",
             "w"
     ) as file:
         json.dump(result, file, indent=2)
